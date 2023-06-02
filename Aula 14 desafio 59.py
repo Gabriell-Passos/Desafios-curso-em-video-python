@@ -38,13 +38,18 @@ Opção desejada: '''))
         elif n2 > n1:
             print("{} é maior que {}.".format(n2,n1))
     if esc == 4:
-        n1 = float(input("Digite o novo valor do primeiro número: "))
-        if n1 == ValueError:
-            print("Isso não é um número, tente denovo!")
-        
-        n2 = float(input("Digite o novo valor do segundo número: "))
-        if n2 == ValueError:
-            print("Isso não é um número, tente denovo!")
+        while True:
+            try:
+                n1 = float(input("Digite o novo valor do primeiro número: "))
+                break
+            except ValueError:
+                print("Isso não é um número, tente novamente!")
+        while True:
+            try:
+                n2 = float(input("Digite o novo valor do segundo número: "))
+                break
+            except ValueError:
+                print("Isso não é um número, tente novamente!")
     if esc == 5:
         print("Você escolheu sair.")
         cont = 1
