@@ -1,6 +1,6 @@
 numero = int(input("Digite um número: "))
 ra = int(input("Digite a razão da progressão aritmética:"))
-cont = 1
+cont = int(1)
 
 while cont < 11:
     numero += ra
