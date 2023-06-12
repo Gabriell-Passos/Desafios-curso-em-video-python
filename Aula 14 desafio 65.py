@@ -21,3 +21,5 @@ while True:
 resultado = quant/cont
 print("A média de todos os {} números é igual a {:.2f}.".format(cont, resultado))
 print("O maior número dentre todos é {} e o menor número é {}.".format(maior, menor))
+
+    # Tudo Certo!
