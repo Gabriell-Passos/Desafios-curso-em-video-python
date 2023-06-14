@@ -18,4 +18,4 @@ while valorn > 0:
         print(f"{valor3 / 50:.0f} notas de 50 Reais.")
     valorn -= 1
     valorcn += 1
-print(10*"-"+"----------------"+12*"-")
+print(11*"-"+"----------------"+11*"-")
