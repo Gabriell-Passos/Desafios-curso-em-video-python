@@ -11,9 +11,10 @@ print(f"Os times em ordem alfabética são: {sorted(cbf)}")
 print("-="*30)
 while True:
     procura = str(input("Qual time da lista você quer saber a posição? "))
-    print(procura)
     if procura in cbf:
-        print((cbf.index(procura))+1)
+        print(f"{procura} está na posição {(cbf.index(procura))+1}")
         break
     else:
         print("Este time não está na lista, cheque se o nome foi escrito corretamente, se a primeira letra está maiuscula ou tente outro time.")
+
+    # Tudo Certo!
