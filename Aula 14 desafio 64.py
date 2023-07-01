@@ -10,3 +10,4 @@ while numero < 999:
         break
 print("Foram digitados {} números, e a soma de todos é igual a {}.".format(quant, soma))
    
+    # Tudo Certo!

@@ -19,3 +19,5 @@ else:
         else:
             cont += 1
     print("Ai estão os {} termos da sequência de Fibonacci.".format(ter))
+
+        # Tudo Certo!
