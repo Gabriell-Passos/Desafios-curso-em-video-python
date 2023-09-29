@@ -1,4 +1,9 @@
-peso=float(input("Quantos kilos a 1 pessoa pesa? "))
+while True:
+    peso=float(input("Quantos kilos a 1 pessoa pesa? "))
+    if peso == 0:
+        print("WTF, are you crazy???")
+    else:
+     break
 pesm = peso
 pesa = 0
 for p in range(2,6):
