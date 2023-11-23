@@ -12,3 +12,5 @@ while True:
     if e >= (len(pep)):
         break
 print(41*"-")
+
+    # Tudo Certo!
