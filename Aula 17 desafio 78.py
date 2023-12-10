@@ -1,4 +1,4 @@
 lista = []
-for x in range (0,5):
-    lista.append(input("Digite os números da lista: "))
+for x in range (1,6):
+    e = lista.append(int(input(f"Digite o {x}° número da lista: ")))
 print(lista)
