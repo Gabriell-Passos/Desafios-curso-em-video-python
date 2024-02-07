@@ -1,13 +1,21 @@
-pessoas = [[], []]
-inf = [[], []]
-v = int(input("Quantas pessoas serão adicionadas na lista: "))
-c = 0
+nep = []
+v = []
+controle = 0
+mapeso = 0
+mepeso = 0
+escolha = int(input("Quantos nomes você quer adicionar? "))
 while True:
-    if v != c:
-        inf[0].append(str(input(f"Digite o nome da {c+1}° pessoa: ")))
-        inf[1].append(int(input(f"Digite o peso da {c+1}° pessoa: ")))
-        pessoas[c].append(inf)
-        c += 1
+    if controle < escolha:
+        v.append(input(f"Qual o nome da {controle + 1}° pessoa?  "))
+        v.append(input(f"Qual o peso da {controle + 1}° pessoa? "))
+        nep.append(v[:])
+        if v[1] > nep[controle][1]:
+            mapeso = v[1]
+        else:
+            mepeso = v[1]
+        v = []
+        controle +=1
     else:
         break
-print(pessoas)
+print(f"Foram cadastradas {len(nep)} pessoas")
+print(f"O maior peso é {mapeso} e o menor peso é {mepeso}")
